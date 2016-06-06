@@ -5,6 +5,7 @@ all: test
 install:
 	@npm install
 travis: install
+	uname -a
 	node index.js
 jshint:
 	@${npm_bin}/jshint .
